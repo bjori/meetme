@@ -13,4 +13,6 @@ URLTEMPLATE="https://www.bluejeans.com/%s/browser"
 # Define the "XXXXXX" room suffixes as the actual BlueJeans IDs
 Cafe="862157722";
 
+# You can hardcode the path to the calendar so you don't have to pass it to make-event.sh
+CALENDAR="/path/to/calendar.ics"
 

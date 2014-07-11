@@ -3,6 +3,7 @@
 
 EVENTSDIR="MYEVENTS"
 CYBERROOMPREFIX="US-CA-FL1-"
+CALENDAR="$1"
 
 for i in /etc/meetmerc ~/.meetmerc .meetmerc; do
 	if [ -r $i ]; then
@@ -13,8 +14,6 @@ done
 
 
 mkdir -p $EVENTSDIR
-
-CALENDAR=$1
 
 export_room_id() {
 	VIDEOID=${!1}
@@ -87,12 +86,8 @@ usage() {
 	exit 1
 }
 
-if [ $# -ne 1 ]; then
-	usage
-fi
-
 if [ ! -r "$CALENDAR" ]; then
-	echo "==> Cannot find '$1'"
+	echo "==> Cannot find '$CALENDAR'"
 	usage
 fi
 
