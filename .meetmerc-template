@@ -1,0 +1,16 @@
+#!/bin/sh
+
+
+# Directory to register my events
+EVENTSDIR="MYEVENTS"
+
+# Name your BlueJeans Room Resources "Matrix-BlueJeans-XXXXXX" in the calendar
+CYBERROOMPREFIX="Matrix-BlueJeans-"
+
+# What url to launch (parsed as printf $url $BlueJeansID)
+URLTEMPLATE="https://www.bluejeans.com/%s/browser"
+
+# Define the "XXXXXX" room suffixes as the actual BlueJeans IDs
+Cafe="862157722";
+
+
